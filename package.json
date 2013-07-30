@@ -1,0 +1,50 @@
+{
+  "name": "browser-fft",
+  "version": "0.1.0",
+  "description": "A cheap FFT by abusing the web audio API",
+  "keywords": [],
+  "author": "Matt-Esch <matt@mattesch.info>",
+  "repository": "git://github.com/Matt-Esch/browser-fft.git",
+  "main": "index",
+  "homepage": "https://github.com/Matt-Esch/browser-fft",
+  "contributors": [
+    {
+      "name": "Matt-Esch"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Matt-Esch/browser-fft/issues",
+    "email": "matt@mattesch.info"
+  },
+  "dependencies": {
+    "global": "~2.0.7"
+  },
+  "devDependencies": {
+    "tape": "~1.0.2"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Matt-Esch/browser-fft/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "testling": {
+    "files": "test/index.js",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
+}
